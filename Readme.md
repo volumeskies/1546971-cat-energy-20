@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Криворотова](https://up.htmlacademy.ru/adaptive/20/user/1546971).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Ткачев](https://htmlacademy.ru/profile/id271181).
 
 ---
 
