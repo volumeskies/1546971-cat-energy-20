@@ -35,6 +35,97 @@
         </ul>
       </nav>
     </header>
+    <main class="page-main">
+      <form action="http://echo.htmlacademy.ru/" method="POST" class="form">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <section class="cat-info">
+          <ul class="cat-info__list">
+            <li class="cat-info__list-item">
+              <label class="cat-info-list__item-cat-name-label" for="cat-name">Имя:*</label>
+              <input class="cat-info-list__item-cat-name" type="text" id="cat-name" name="catname" placeholder="Барсик" required>
+            </li>
+            <li class="cat-info__list-item">
+              <label class="cat-info-list__item-cat-weight-label" for="cat-weight">Вес (кг):*</label>
+              <input class="cat-info-list__item-cat-weight" type="text" id="cat-weight" name="catweight" placeholder="7" pattern="^[0-9]\d*$" required>
+            </li>
+            <li class="cat-info__list-item">
+              <label class="cat-info-list__item-cat-age-label" for="cat-age">Возраст (лет):</label>
+              <input class="cat-info-list__item-cat-age" type="text" id="cat-age" name="catage" placeholder="7" pattern="^[1-9]\d*$">
+            </li>
+          </ul>
+          <fieldset class="form-cat-options">
+            <legend class="visually-hidden">Цель:</legend>
+            <ul class="form-cat-options__list" role="none">
+              <li class="form-cat-options__list-item">
+                <input class="form-cat-options__list-item-loss" type="radio" id="loss" name="loss">
+                <label class="form-cat-options__list-item-loss-label" for="loss">Похудение</label>
+              </li>
+              <li class="form-cat-options__list-item">
+                <input class="form-cat-options__list-item-gain" type="radio" id="gain" name="gain">
+                <label class="form-cat-options__list-item-gain-label" for="gain">Набор массы</label>
+              </li>
+              <li class="form-cat-options__list-item">
+                <input class="form-cat-options__list-item-idk" type="radio" id="idk" name="idk">
+                <label class="form-cat-options__list-item-idk-label" for="idk">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+        <section class="owner-info">
+          <h2 class="owner-info__title">Контактные данные (владельца кота)</h2>
+          <ul class="owner-info__list">
+            <li class="owner-info__list-item">
+              <label class="owner-info-list__item-email-label" for="owner-email">E-mail:*</label>
+              <input class="owner-info-list__item-email" type="email" id="owner-email" name="owneremail" placeholder="kuklachev@gmail.com" required>
+            </li>
+            <li class="owner-info__list-item">
+              <label class="owner-info-list__item-tel-label" for="owner-tel">Телефон:*</label>
+              <input class="owner-info-list__item-tel" type="tel" id="owner-tel" name="ownertel" placeholder="8(960)900-60-90" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required>
+            </li>
+          </ul>
+        </section>
+        <section class="comment">
+          <h2 class="comment__title">Комментарий</h2>
+          <textarea class="comment__text" rows="5" cols="45" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </section>
+        <section class="additional">
+          <h2 class="additional__title">Дополнительно</h2>
+          <fieldset class="additional-options">
+            <legend class="visually-hidden">Дополнительные параметры</legend>
+            <ul class="additional-options__list" role="none">
+              <li class="additional-options__list-item">
+                <input class="additional-options__list-item-sweetener" type="radio" id="sweetener" name="sweetener">
+                <label class="additional-options__list-item-sweetener-label" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="additional-options__list-item">
+                <input class="additional-options__list-item-water" type="radio" id="water" name="water">
+                <label class="additional-options__list-item-water-label" for="water">Питьевая вода</label>
+              </li>
+              <li class="additional-options__list-item">
+                <input class="additional-options__list-item-milk" type="radio" id="milk" name="milk">
+                <label class="additional-options__list-item-milk-label" for="milk">Молоко</label>
+              </li>
+              <li class="additional-options__list-item">
+                <input class="additional-options__list-item-vitamins" type="radio" id="vitamins" name="vitamins">
+                <label class="additional-options__list-item-vitamins-label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+        <button class="form__submit-button button-green" type="submit">Отправить заявку</button>
+        <small class="form__note">* — Обязательные поля</small>
+      </form>
+      <section class="contacts">
+        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <address class="contacts__address">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </address>
+        <div contacts="contacts__map">
+        </div>
+      </section>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
@@ -60,8 +151,10 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          <img src="https://via.placeholder.com/27x34" with="27" height="34" alt="Логотип HTML Академии">
+          <a class="copyright__academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow">HTML Academy</a>
+          <a class="copyright__academy-link-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow">
+            <img src="https://via.placeholder.com/27x34" with="27" height="34" alt="Логотип HTML Академии">
+          </a>
         </div>
       </div>
     </footer>
