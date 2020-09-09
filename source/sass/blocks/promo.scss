@@ -1,0 +1,15 @@
+.promo {
+  height: 480px;
+  background-image: url('../../img/index-background-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  color: $background-white;
+}
+
+.promo__description {
+  font-size: 36px;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  text-transform: uppercase;
+}
