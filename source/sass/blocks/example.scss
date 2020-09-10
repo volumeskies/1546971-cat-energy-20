@@ -1,0 +1,22 @@
+.example {
+  background-color: #EAEAEA;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.example__text {
+  font-family: Arial, sans-serif;
+}
+
+.example__summary {
+  text-transform: uppercase;
+}
+
+.example__before,
+.example__after {
+  font-size: 16px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,16 @@
+.owner-info-list__item-email,
+.owner-info-list__item-tel {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.form-cat-options__list-item-loss-label,
+.form-cat-options__list-item-gain-label,
+.form-cat-options__list-item-idk-label {
+  font-size: 16px;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}

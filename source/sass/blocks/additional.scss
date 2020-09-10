@@ -1,0 +1,21 @@
+.additional__title {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.additional__gift-anchor {
+  display: inline-block;
+  width: 280px;
+  height: 289px;
+  background-image: url(../../img/gift-photo-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.additional__gift-anchor-text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  color: $background_white;
+}
