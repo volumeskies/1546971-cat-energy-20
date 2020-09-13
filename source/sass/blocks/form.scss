@@ -11,3 +11,17 @@
   font-family: Arial, sans-serif;
   font-style: normal;
 }
+
+.form__submit-button {
+  align-self: center;
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+  }
+}
+
+.form__note {
+  align-self: center;
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+  }
+}

@@ -1,5 +1,11 @@
 .example {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+  grid-template-columns: 1fr;
 }
 
 .example__title {
@@ -11,7 +17,16 @@
   font-family: Arial, sans-serif;
 }
 
-.example__summary {
+.example__stats-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+  }
+}
+
+.example__stats-summary {
   text-transform: uppercase;
 }
 
@@ -19,4 +34,22 @@
 .example__after {
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.example__stats-list {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  @media (min-width: $tablet-width) {
+    flex-basis: auto;
+  }
+}
+
+.example__compare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 2 / 4 / 2;
+  }
 }

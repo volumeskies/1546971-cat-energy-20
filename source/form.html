@@ -135,11 +135,11 @@
           <h2 class="owner-info__title">Контактные данные (владельца кота)</h2>
           <ul class="owner-info__list">
             <li class="owner-info__list-item">
-              <label class="owner-info-list__item-email-label" for="owner-email"
+              <label class="owner-info__list-item-email-label" for="owner-email"
                 >E-mail:*</label
               >
               <input
-                class="owner-info-list__item-email"
+                class="owner-info__list-item-email"
                 type="email"
                 id="owner-email"
                 name="owneremail"
@@ -148,11 +148,11 @@
               />
             </li>
             <li class="owner-info__list-item">
-              <label class="owner-info-list__item-tel-label" for="owner-tel"
+              <label class="owner-info__list-item-tel-label" for="owner-tel"
                 >Телефон:*</label
               >
               <input
-                class="owner-info-list__item-tel"
+                class="owner-info__list-item-tel"
                 type="tel"
                 id="owner-tel"
                 name="ownertel"
@@ -173,8 +173,8 @@
             placeholder="Расскажите обо всех повадках кота"
           ></textarea>
         </section>
-        <section class="additional">
-          <h2 class="additional__title">Дополнительно</h2>
+        <section class="additional-form">
+          <h2 class="additional-form__title">Дополнительно</h2>
           <fieldset class="additional-options">
             <legend class="visually-hidden">Дополнительные параметры</legend>
             <ul class="additional-options__list" role="none">
@@ -232,11 +232,11 @@
               </li>
             </ul>
           </fieldset>
+          <button class="form__submit-button button-green" type="submit">
+            Отправить заявку
+          </button>
+          <small class="form__note">* — Обязательные поля</small>
         </section>
-        <button class="form__submit-button button-green" type="submit">
-          Отправить заявку
-        </button>
-        <small class="form__note">* — Обязательные поля</small>
       </form>
     </main>
     <footer class="page-footer">

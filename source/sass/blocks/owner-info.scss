@@ -3,9 +3,45 @@
   font-weight: 400;
 }
 
+.owner-info__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.owner-info__list-item {
+  display: flex;
+  align-items: center;
+  @media (min-width: $desktop-width) {
+    flex: 1;
+  }
+}
+
 .owner-info-list__item-email-label,
 .owner-info-list__item-tel-label {
   font-size: 16px;
   text-transform: uppercase;
   color: $special-dark-grey;
+}
+
+.owner-info__list-item-email,
+.owner-info__list-item-tel {
+  flex: 1;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.form-cat-options__list-item-loss-label,
+.form-cat-options__list-item-gain-label,
+.form-cat-options__list-item-idk-label {
+  font-size: 16px;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
 }

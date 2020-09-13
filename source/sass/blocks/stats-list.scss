@@ -1,14 +1,21 @@
 .stats-list {
   list-style: none;
+  padding: 0;
 }
 
-.stats-list-item__weight,
-.stats-list-item__days {
+.stats-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-list__item-weight,
+.stats-list__item-days {
   font-size: 24px;
 }
 
-.stats-list-item__weight-note,
-.stats-list-item__days-note {
+.stats-list__item-weight-note,
+.stats-list__item-days-note {
   font-family: Arial, sans-serif;
   font-size: 12px;
 }
