@@ -180,33 +180,35 @@
         </p>
         <div class="example__stats-wrapper">
           <ul class="example__stats-list stats-list">
-            <li class="stats-list-item">
-              <span class="stats-list-item__weight">5 кг</span>
-              <small class="stats-list-item__weight-note">снижение веса</small>
+            <li class="stats-list__item">
+              <span class="stats-list__item-weight">5 кг</span>
+              <small class="stats-list__item-weight-note">снижение веса</small>
             </li>
-            <li class="stats-list-item">
-              <span class="stats-list-item__days">60 дней</span>
-              <small class="stats-list-item__days-note"
+            <li class="stats-list__item">
+              <span class="stats-list__item-days">60 дней</span>
+              <small class="stats-list__item-days-note"
                 >затрачено времени</small
               >
             </li>
           </ul>
+          <p class="example__stats-summary">
+            <span class="example__stats-summary-text">Затраты на питание:</span>
+            <span class="example__stats-summary-price">15 000 руб.</span>
+          </p>
         </div>
-        <p class="example__summary">
-          <span class="example__summary-text">Затраты на питание:</span>
-          <span class="example__summary-price">15 000 руб.</span>
-        </p>
-        <img
-          class="example__image"
-          src="https://via.placeholder.com/311x232"
-          width="311"
-          height="232"
-          alt="Кот до питания Кэт Энерджи"
-        />
-        <div class="example__comparing-range">
-          <label class="example__before" for="range">Было</label>
-          <input class="example__range" type="range" id="range" />
-          <label class="example__after" for="range">Стало</label>
+        <div class="example__compare">
+          <img
+            class="example__compare-image"
+            src="https://via.placeholder.com/311x232"
+            width="311"
+            height="232"
+            alt="Кот до питания Кэт Энерджи"
+          />
+          <div class="example__compare-range">
+            <label class="example__before" for="range">Было</label>
+            <input class="example__range" type="range" id="range" />
+            <label class="example__after" for="range">Стало</label>
+          </div>
         </div>
       </section>
     </main>

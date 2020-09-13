@@ -1,16 +1,35 @@
+.additional {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .additional__title {
+  align-self: flex-start;
   font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
+  @media (min-width: $desktop-width) {
+    flex-basis: 100%;
+  }
 }
 
 .additional__gift-anchor {
+  align-self: center;
   display: inline-block;
   width: 280px;
   height: 289px;
   background-image: url(../../img/gift-photo-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    background-size: cover;
+  }
 }
 
 .additional__gift-anchor-text {
@@ -18,4 +37,31 @@
   font-size: 16px;
   font-style: normal;
   color: $background_white;
+}
+
+.additional__list {
+  padding: 0;
+  margin: 0;
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.additional__list-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.additional-options__list {
+  list-style: none;
+  padding: 0;
 }
