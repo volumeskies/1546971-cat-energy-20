@@ -1,5 +1,6 @@
 @import "./fonts.scss";
 @import "./colors.scss";
+@import "./viewports.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/promo.scss";
@@ -24,6 +25,9 @@
 @import "./blocks/products.scss";
 @import "./blocks/more.scss";
 @import "./blocks/goods-list.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/social.scss";
+@import "./blocks/catalog.scss";
 
 img {
   max-width: 100%;

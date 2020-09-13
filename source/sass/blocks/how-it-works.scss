@@ -5,6 +5,24 @@
 
 .how-it-works__list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.how-it-works__list-item {
+  display: flex;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+  @media (min-width: $desktop-width) {
+    flex-basis: 0;
+  }
 }
 
 .how-it-works__healthy-description,

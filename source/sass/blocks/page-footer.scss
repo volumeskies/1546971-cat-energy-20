@@ -1,3 +1,19 @@
 .page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: $basic-grey;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  align-self: center;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -1,3 +1,12 @@
+.products__card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
 .products__card-description-heading {
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
@@ -17,4 +26,8 @@
   font-size: 12px;
   font-style: normal;
   color: $special-dark-grey;
+}
+
+.products__card-description-list-item {
+  display: flex;
 }
