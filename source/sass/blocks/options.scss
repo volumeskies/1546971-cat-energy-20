@@ -2,16 +2,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .options__list-item {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    position: relative;
+  }
 }
 
-.options__slim-title {
+.options__slim-title,
+.options__pro-title {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 400;
+  display: inline-block;
 }
 
 .options__slim-description {
@@ -24,12 +32,6 @@
   text-transform: uppercase;
 }
 
-.options__pro-title {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
 .options__pro-description {
   font-family: Arial, sans-serif;
 }
@@ -38,4 +40,13 @@
   text-decoration: none;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.options__slim-icon,
+.options__pro-icon {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
